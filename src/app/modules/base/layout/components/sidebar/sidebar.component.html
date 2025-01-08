@@ -252,12 +252,20 @@
             <div class="collapse" id="charts">
               <ul class="nav nav-collapse">
                 <li>
-                  <a href="charts/charts.html">
+                  <a routerLinkActive="active"
+                    [routerLink]="['/chartjs']"
+                    [routerLinkActiveOptions]="{ exact: true }"
+                    ariaCurrentWhenActive="page"
+                  >
                     <span class="sub-item">Chart Js</span>
                   </a>
                 </li>
                 <li>
-                  <a href="charts/sparkline.html">
+                  <a routerLinkActive="active"
+                    [routerLink]="['/sparkline']"
+                    [routerLinkActiveOptions]="{ exact: true }"
+                    ariaCurrentWhenActive="page"
+                  >
                     <span class="sub-item">Sparkline</span>
                   </a>
                 </li>
@@ -265,7 +273,11 @@
             </div>
           </li>
           <li class="nav-item">
-            <a href="widgets.html">
+            <a routerLinkActive="active"
+              [routerLink]="['/widget']"
+              [routerLinkActiveOptions]="{ exact: true }"
+              ariaCurrentWhenActive="page"
+            >
               <i class="fas fa-desktop"></i>
               <p>Widgets</p>
               <span class="badge badge-success">4</span>

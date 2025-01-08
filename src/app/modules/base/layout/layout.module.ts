@@ -116,6 +116,27 @@ const routes: Routes = [
             (m) => m.JsvectormapModule
           ),
       },
+      {
+        path: 'chartjs',
+        loadChildren: () => 
+          import('../../chartjs/chartjs.module').then(
+            (m) => m.ChartjsModule
+          ),
+      },
+      {
+        path: 'sparkline',
+        loadChildren: () => 
+          import('../../sparkline/sparkline.module').then(
+            (m) => m.SparklineModule
+          ),
+      },
+      {
+        path: 'widget',
+        loadChildren: () => 
+          import('../../widget/widget.module').then(
+            (m) => m.WidgetModule
+          ),
+      },
       { path: '', redirectTo: 'dashboard', pathMatch: 'full' },
       { path: '**', redirectTo: 'dashboard', pathMatch: 'full' },
     ]
