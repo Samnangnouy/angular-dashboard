@@ -10,7 +10,6 @@ import { FormComponent } from './components/form/form.component';
   imports: [
     CommonModule,
     FormRoutingModule,
-    FormRoutingModule
   ]
 })
 export class FormModule { }
