@@ -1,0 +1,10 @@
+#main-wrapper.toggled .sidebar {
+    transform: translateX(-100%); /* Adjust as needed */
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  #main-wrapper .sidebar {
+    transform: translateX(0);
+    transition: transform 0.3s ease-in-out;
+  }
+  

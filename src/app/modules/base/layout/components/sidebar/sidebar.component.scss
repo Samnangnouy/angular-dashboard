@@ -1,0 +1,4 @@
+#main-wrapper.toggled .sidebar {
+  transform: translateX(-100%); /* Example for hiding the sidebar */
+  transition: transform 0.3s ease;
+}
